@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atividade01</title>
+  </head>
+  <body>
+    <center><h1>Reserva Hotel IFSP</h1></center>
+
+    <form>
+      <p>
+        <label>
+          Nome Completo:
+          <input type="text" name="name" placeholder="José da Silva" required />
+        </label>
+      </p>
+
+      <p>
+        <label> Email <input type="email" name="email" required /> </label>
+      </p>
+
+      <p>
+        <label>
+          Repita Email <input type="email" name="email-repeat" required />
+        </label>
+      </p>
+
+      <p>
+        <label
+          >Estado de origem:
+          <select name="states-brazil">
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="ES">Espírito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PR">Paraná</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>
+          </select></label
+        >
+      </p>
+
+      <p>
+        <label>
+          Data de chegada:
+          <input type="date" name="arrival-date" required
+        /></label>
+      </p>
+
+      <p>
+        <label>
+          Número de noites (quartos são R$ 99,00 por noite):
+          <input type="number" name="nights" min="1" max="30" required />(min 1,
+          max 30)</label
+        >
+      </p>
+
+      <p>
+        <label>
+          Número de noites (adicional por convidado R$ 10,00 por noite):
+          <input type="number" name="nights" min="1" max="4" required /> (min 1,
+          max 4)</label
+        >
+      </p>
+
+      <p>Total estimado: R$ 99,00</p>
+
+      <br />
+
+      <label>
+        Código promocional:
+        <input
+          type="text"
+          name="promo"
+          pattern="[A-Za-z0-9]+"
+          minlength="6"
+          maxlength="6"
+        />
+      </label>
+
+      <p>
+        <input type="submit" value="Fazer reserva" />
+      </p>
+    </form>
+  </body>
+</html>
